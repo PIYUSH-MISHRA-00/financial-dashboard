@@ -1,0 +1,14 @@
+{
+    "name": "financial-dashboard",
+    "version": "1.0.0",
+    "description": "Real-Time Financial Transaction Dashboard",
+    "scripts": {
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server && npm start",
+      "client": "cd client && npm start",
+      "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    },
+    "devDependencies": {
+      "concurrently": "^6.2.1"
+    }
+  }
